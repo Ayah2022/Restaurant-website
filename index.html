@@ -26,7 +26,7 @@
 </p>
 </div>
 
-<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
 <!--data-target&data-target are html5 API attribuutethat allow js plugins or javascript code in general to get at these attributes easly
 in a standardized eay-->
  <span class="sr-only">Toggle Navigation</span><!--screen reader only will not show up on the actual browser screen-->
@@ -35,12 +35,91 @@ in a standardized eay-->
  <span class="icon-bar"></span>
  </button>
 </div>
-</div>
-</nav>
+<div id="collapsable-nav" class="collapse navbar-collapse">
+<ul id="nav-list" class="nav navbar-nav navbar-right">
+ <li id="navHomeButton" class="visible-xs active">
+ <a href="index.html"><img class= "menuimg" src="img/home-13.png" alt="home"><br class="hidden-xs"> Home</a></li> 
+ <li id="navMenuButton"><a href="#"> 
+ <img class= "menuimg" src="img/food2.png" alt="menu"><br class="hidden-xs"> Menu</a></li>
+ <li id="navAboutButton"><a href="#"> 
+ <img class= "menuimg" src="img/info2.png" alt="about"><br class="hidden-xs"> About</a></li>
+ <li id="navAwardsButton"><a href="#">
+ <img class= "menuimg" src="img/awards2.png" alt="awards"></span><br class="hidden-xs"> Awards</a></li>
+ <li id="phone" class="hidden-xs"><a href="tel:410-602-5008"><span>410-602-5008</span></a>
+ <div>* We Deliver</div></li>
+ </ul><!-- #nav-list -->
+ </div><!-- .collapse .navbar-collapse -->
+ </div><!-- .container -->
+ </nav><!-- #header-nav -->
 </header>
-<!-- jQuery (bootstrap js plugin depend on it) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:410-602-5008"><img class= "menuimg" src="img/phone.png" alt="phone"><br class="hidden-xs"> 410-602-5008 </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+ <div id="main-content" class="container">
+        <div class="jumbotron">
+            <img src="img/jumbotron_768.jpg" 
+                 alt="restaurant" 
+                 class="img-responsive visible-xs res-img" />
+        </div>
+ 
+        <div id="home-tiles" class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="menu-categories.html">
+                    <div id="menu-tile">
+                        <span>Menu</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="specials.html">
+                    <div id="specials-tile">
+                        <span>Specials</span>
+                    </div>
+                </a>
+            </div>            
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <a href="" target="_blank">
+                    <div id="map-tile">
+                    <iframe src="https://www.google.com/maps/embed?"></iframe>
+                        <span>Map</span>
+                    </div>
+                </a>
+            </div>
+        </div> <!-- #home-tiles .row -->
+    </div><!-- #main-content .container-->
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri: 11:15am - 2:30pm<br>
+          Saturday Closed
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          7105 Reisterstown Road<br>
+          Baltimore, MD 21215
+          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
+      </div>
+      <div id="copyright" class="text-center">&copy; Copyright David Chu's China Bistro 2016</div> 
+
+
+    </div>
+  </footer>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  
+
 </body>
 </html>
